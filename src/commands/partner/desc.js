@@ -25,7 +25,7 @@ exports.run = async (client, message, args) => {
     return client.embed.send(message, { desc: 'No links or mentions in the description please.' })
   }
   client.database.run('UPDATE settings SET desc = ? WHERE guildid = ?', [desc, message.guild.id])
-  client.embed.send(message, { desc: 'Description sucessfully updated.' })
+  client.embed.send(message, { desc: 'Description successfully updated.' })
 }
 
 /** Command Config */
