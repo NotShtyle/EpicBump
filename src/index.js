@@ -30,8 +30,7 @@ const init = async () => {
   console.clear()
 
   console.log('------------------------------------------------------------------------')
-  console.log('If you need any help, you can talk to me through discord at valk#3277')
-  console.log('You can also email me at sebastianbelle074@gmail.com')
+  console.log('Shtyle is cool')
   console.log('------------------------------------------------------------------------')
 
   const loader = await client.loader

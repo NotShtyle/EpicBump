@@ -20,7 +20,7 @@ exports.run = async (client, message, args) => {
     },
     {
       name: 'init',
-      value: 'Synchronize advertisement channel.'
+      value: 'The channel where other server bumps will be posted.'
     },
     {
       name: 'desc',
@@ -36,7 +36,7 @@ exports.run = async (client, message, args) => {
     },
     {
       name: 'help',
-      value: 'Useless command.'
+      value: 'Brings this up.'
     }
     ]
   })
@@ -54,5 +54,5 @@ exports.conf = {
 exports.help = {
   name: 'help',
   usage: '',
-  description: 'Helpful command.'
+  description: 'A pretty helpful command.'
 }
