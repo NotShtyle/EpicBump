@@ -37,8 +37,11 @@ exports.run = async (client, message, args) => {
     {
       name: 'help',
       value: 'Brings this up.'
+    },
+    {
+      name: 'vote',
+      value: 'Vote for the discord bot to gain more members'
     }
-    {}
     ]
   })
 }
