@@ -38,6 +38,7 @@ exports.run = async (client, message, args) => {
       name: 'help',
       value: 'Brings this up.'
     }
+    {}
     ]
   })
 }

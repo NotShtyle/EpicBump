@@ -1,6 +1,6 @@
 /**
- * Sends a dynamic bot invite link to the executor.
- * @module commands/invite
+ * A small sanity ping pong check to see if the bot is responding.
+ * @module commands/ping
  */
 
 /**
@@ -10,21 +10,21 @@
  * @param {string} args - The arguments of the command
  */
 exports.run = async (client, message, args) => {
-  client.embed.send(message, { desc: 'I\'ve sent you a private message with the bot invite link.' })
-
+  const msg = await client.embed.send(message, { desc: 'vote?' }, false)
+  await client.embed.edit(message, msg, { desc: `Coming Soon...` })
 }
 
 /** Command Config */
 exports.conf = {
   enabled: true,
-  aliases: [],
+  aliases: ['p'],
   guildOnly: false,
   permLevel: 'User'
 }
 
 /** Command Help */
 exports.help = {
-  name: 'vote',
+  name: 'upvote',
   usage: '',
-  description: 'vote for this bot (gets you more members!)'
+  description: 'vote for the discord bot (gets you more members)'
 }
